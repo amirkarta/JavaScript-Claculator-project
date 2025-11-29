@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator-project</title>
+    <link rel="stylesheet" href="styles/10-Calculator-project.css">
+  </head>
+  <body>
+    <style>
+      body{
+        justify-items: center;
+        background-image: url('./images/backround-img.jpeg');
+        background-size: cover;
+        background-position: center;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: aquamarine;
+}
+    </style>
+    <h1 class="h1">AMIR KARTA'S CALCULATOR PROJECT </h1>
+    <!-- Code changes are at the bottom. -->
+    <p class="js-calculation-text text-field"></p>
+    <p>
+      <button onclick="
+        updateCalculation('1');
+      ">1</button>
+
+      <button onclick="
+        updateCalculation('2');
+      ">2</button>
+
+      <button onclick="
+        updateCalculation('3');
+      ">3</button>
+
+      <button class="btn-orange" onclick="
+        updateCalculation(' + ');
+      ">+</button>
+    </p>
+
+    <p>
+      <button onclick="
+        updateCalculation('4');
+      ">4</button>
+
+      <button onclick="
+        updateCalculation('5');
+      ">5</button>
+
+      <button onclick="
+        updateCalculation('6');
+      ">6</button>
+
+      <button class="btn-orange" onclick="
+        updateCalculation(' - ');
+      ">-</button>
+    </p>
+
+    <p>
+      <button onclick="
+        updateCalculation('7');
+      ">7</button>
+
+      <button onclick="
+        updateCalculation('8');
+      ">8</button>
+
+      <button onclick="
+        updateCalculation('9');
+      ">9</button>
+
+      <button class="btn-orange" onclick="
+        updateCalculation(' * ');
+      ">*</button>
+    </p>
+
+    <p>
+      <button onclick="
+        updateCalculation('0');
+      ">0</button>
+
+      <button onclick="
+        updateCalculation('.');
+      ">.</button>
+
+      <button onclick="
+        // Note: eval() takes a string and runs it as code.
+        // Avoid using eval() in real world projects since
+        // it can potentially be given harmful code to run.
+        // Only use eval() for learning purposes.
+        calculation = eval(calculation);
+        showCalculuation ()
+
+        // Remember to save the calculation here.
+        saveCalculation()
+      ">=</button>
+
+      <button class="btn-orange" onclick="
+        updateCalculation(' / ');
+      ">/</button>
+    </p>
+
+    <p>
+      <button class="btn-clear" onclick="
+        calculation = '';
+        showCalculuation ()
+
+        // Remember to save the calculation here.
+        saveCalculation()
+      ">Clear</button>
+    </p>
+
+    <script src="scripts/10-Calculator-project.js"></script>
+
+  </body>
+</html>
